@@ -26,6 +26,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program.program",
+      "mappedBy": "category"
     }
   }
 }

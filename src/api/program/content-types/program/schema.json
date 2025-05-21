@@ -32,27 +32,27 @@
         "audios"
       ]
     },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": [
-        "shared.slider",
-        "shared.seo",
-        "shared.rich-text",
-        "shared.quote",
-        "shared.media"
-      ]
+    "pdf": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     },
-    "author": {
+    "authors": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::author.author",
-      "inversedBy": "programs"
+      "mappedBy": "program"
     },
-    "category": {
+    "categories": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::category.category",
-      "inversedBy": "programs"
+      "mappedBy": "program"
     }
   }
 }

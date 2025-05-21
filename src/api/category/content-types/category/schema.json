@@ -27,11 +27,17 @@
     "description": {
       "type": "text"
     },
-    "programs": {
+    "program": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::program.program",
-      "mappedBy": "category"
+      "inversedBy": "categories"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "categories"
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "recipe_of_the_months",
+  "info": {
+    "singularName": "recipe-of-the-month",
+    "pluralName": "recipe-of-the-months",
+    "displayName": "recipe of the month"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
